@@ -1,0 +1,10 @@
+<div class="flex flex-col items-center gap-2">
+  <p>Count: {{ count }}</p>
+  <p>Double: {{ getDouble() }}</p>
+  <button
+    class="rounded-xl bg-red-900 px-12 py-2 transition-colors hover:bg-red-700 active:bg-red-800"
+    (click)="onClick()"
+  >
+    <ng-content></ng-content>
+  </button>
+</div>
